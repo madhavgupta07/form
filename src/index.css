@@ -1,0 +1,117 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, h1, h2, h3, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+form, table {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; 
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.phone{
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; 
+}
+table {
+  width: 100%;
+  max-width: 600px; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px; 
+  font-size: 15px; 
+}
+
+td {
+  padding: 12px; 
+  font-size: 14px; 
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.mobile-input {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+}
+
+/* Style the select element */
+.mobile-input select {
+  flex: 1; /* Allow the select to grow and take available space */
+  margin-right: 10px; /* Add some spacing between select and input */
+}
+
+/* Style the input element */
+.mobile-input input[type="tel"] {
+  flex: 2; /* Allow the input to grow and take available space */
+}
