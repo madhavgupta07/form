@@ -3,7 +3,8 @@ import './index.css';
 import data from './config';
 import 'react-phone-input-2/lib/style.css'; // Import CSS for react-phone-input-2
 import PhoneInput from 'react-phone-input-2';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [state, setState] = useState('');
@@ -243,8 +244,12 @@ function App() {
                 <td>{val.district}</td>
                 <td>{val.mobile}</td>
                 <td>
-                  <button onClick={() => handleEdit(index)}>Edit</button>
-                  <button onClick={() => handleDelete(index)}>Delete</button>
+                  <button onClick={() => handleEdit(index)}>
+                    <FontAwesomeIcon icon={faEdit} /> Edit
+                  </button>
+                  <button onClick={() => handleDelete(index)}>
+                    <FontAwesomeIcon icon={faTrash} /> Delete
+                  </button>
                 </td>
               </tr>
             );
